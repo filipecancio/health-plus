@@ -1,5 +1,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+#Não se esqueça
+firebase deploy --only hosting:ifba-health-plus
+
 ## Available Scripts
 
 In the project directory, you can run:
