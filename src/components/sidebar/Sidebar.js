@@ -2,8 +2,7 @@ import React from 'react';
 import { Drawer, List, ListItem, ListItemText } from '@material-ui/core';
 
 const Sidebar = () => (
-    <Drawer variant="persistent"
-    anchor="left">
+    <Drawer variant="permanent">
         <List>
             {['Pacientes','Exames','Laudos'].map((text,index)=>(
                 <ListItem button key={text}>
