@@ -1,24 +1,13 @@
 import React from 'react';
 import './painel.css';
-import { Drawer, List, ListItem, ListItemText, ListItemIcon, AppBar, Toolbar, CssBaseline } from '@material-ui/core';
+import {CssBaseline } from '@material-ui/core';
+import Header from '../../components/header/Header';
+import Sidebar from '../../components/sidebar/Sidebar';
 
 const Painel = () =><div >
     <CssBaseline/>
-    <AppBar position="fixed">
-        <Toolbar>
-            Health-Plus
-        </Toolbar>
-    </AppBar>
-    <Drawer variant="permanent">
-        <List>
-            {['Pacientes','Exames','Laudos'].map((text,index)=>(
-                <ListItem button key={text}>
-                    <ListItemText primary={text}/>
-                </ListItem>
-            ))}
-        </List>
-        
-    </Drawer>
+    <Header />
+    <Sidebar />
 </div>
 
 export default Painel;
