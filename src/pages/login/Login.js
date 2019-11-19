@@ -1,7 +1,11 @@
 import React from 'react';
 import TextField from '@material-ui/core/TextField';
+import logo from '../../assets/svg/logo_01.svg';
+import './Login.css';
+import { Button } from '@material-ui/core';
 
-const Login = () => <div>
+const Login = () => <div className="Login">
+    <img src={logo} alt="logo" />
     <TextField
         required
         id="filled-basic"
@@ -14,6 +18,7 @@ const Login = () => <div>
         label="senha"
         variant="filled"
     />
+    <Button>Entrar</Button>
 </div>
 
 
