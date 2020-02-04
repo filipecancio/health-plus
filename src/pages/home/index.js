@@ -1,6 +1,7 @@
 import React from 'react';
 import Background from '../../assets/jpg/doctor-wallpaper.jpg';
 import Logo from "../../assets/svg/logo_01.svg";
+import Header from '../../components/Header';
 
 const background = {
     backgroundImage: `url(${Background})`,
@@ -18,6 +19,7 @@ const background = {
 
 const Home = () =>(
     <div style={background}>
+    <Header />
         <h1>Acesse aos laudos de exames da sua clínica<br/> de forma rápida e acessível.</h1>
         <img src={Logo} alt="Logo da compainha Health-Plus" />
     </div>
