@@ -1,7 +1,7 @@
 import React from 'react';
 import Background from '../../assets/jpg/doctor-wallpaper.jpg';
 import Logo from "../../assets/svg/logo_01.svg";
-import Header from '../../components/Header';
+import Header from '../../components/header';
 
 const background = {
     backgroundImage: `url(${Background})`,

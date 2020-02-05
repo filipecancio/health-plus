@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import Oops from './pages/Oops';
+import Oops from './pages/oops';
 import Home from "./pages/home";
 import Login from './pages/Login';
 import Painel from './pages/Painel';
