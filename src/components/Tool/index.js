@@ -20,9 +20,9 @@ const Tool = () => (
     </Navbar.Brand>
     <Navbar.Menu>
       <Navbar.Segment align="start">
-        <Navbar.Item>Pacientes</Navbar.Item>
-        <Navbar.Item>Exames</Navbar.Item>
-        <Navbar.Item>Laudos</Navbar.Item>
+      <Navbar.Item><Link to="/pacientes" >Pacientes</Link></Navbar.Item>
+      <Navbar.Item><Link to="/exames" >Exames</Link></Navbar.Item>
+      <Navbar.Item><Link to="/laudos" >Laudos</Link></Navbar.Item>
 
 
       </Navbar.Segment>

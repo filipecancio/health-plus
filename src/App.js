@@ -7,9 +7,10 @@ const app = {
     gridAutoColumns: '100vw',
     };
 
-const App = () => (
+const App = (props) => (
     <div style={app}>
-        <Routes />
+        <Routes>
+        </Routes>
     </div>
 );
 
