@@ -3,19 +3,17 @@ import Routes from './routes';
 import db from './firebase'
 import './App.css';
 
-class App extends React.Component {
-    constructor(props) {
-        super(props)
-        const doc = db.collection('health-plus').doc('health-plus').get()
-        this.state = doc
-        console.log(this.state)
-    }
-    
-    render() {
-        return (<div className="App">
-            <Routes />
-        </div>)
-    }
-}
+const app = {
+    display: 'grid',
+    gridTemplateRows: '100vh',
+    gridAutoColumns: '100vw',
+    };
+
+const App = (props) => (
+    <div style={app}>
+        <Routes>
+        </Routes>
+    </div>
+);
 
 export default App;
