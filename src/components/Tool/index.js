@@ -1,50 +1,50 @@
 import React from 'react';
 import logo from '../../assets/png/logo.png';
-import { Navbar,Button } from 'rbx';
+import avatar from '../../assets/png/avatar.png';
+import { Navbar, Button } from 'rbx';
 import { Link } from 'react-router-dom';
 
-const Tool = () =>(
-    <Navbar document={document} fixed="top" color="danger">
-        <Navbar.Brand>
-          <Navbar.Item href="#">
-            <img
-              src={logo}
-              alt=""
-              role="presentation"
-              width="112"
-              height="28"
-            />
-          </Navbar.Item>
-          <Navbar.Burger />
-        </Navbar.Brand>
-        <Navbar.Menu>
-          <Navbar.Segment align="start">
-            <Navbar.Item>Home</Navbar.Item>
-            <Navbar.Item>Listagem</Navbar.Item>
+const Tool = () => (
+  <Navbar document={document} fixed="top" color="danger">
+    <Navbar.Brand>
+      <Navbar.Item href="#">
+        <img
+          src={logo}
+          alt=""
+          role="presentation"
+          width="112"
+          height="28"
+        />
+      </Navbar.Item>
+      <Navbar.Burger />
+    </Navbar.Brand>
+    <Navbar.Menu>
+      <Navbar.Segment align="start">
+        <Navbar.Item>Pacientes</Navbar.Item>
+        <Navbar.Item>Exames</Navbar.Item>
+        <Navbar.Item>Laudos</Navbar.Item>
 
-            <Navbar.Item dropdown>
-              <Navbar.Link>Softwares</Navbar.Link>
-              <Navbar.Dropdown>
-                <Navbar.Item>Cardiologia</Navbar.Item>
-                <Navbar.Item>Pediatria</Navbar.Item>
-                <Navbar.Item>Geriatria</Navbar.Item>
-                <Navbar.Divider />
-                <Navbar.Item>Ver mais</Navbar.Item>
-              </Navbar.Dropdown>
-            </Navbar.Item>
-          </Navbar.Segment>
 
-          <Navbar.Segment align="end">
-            <Navbar.Item>
-              <Button.Group>
-              <Link to="/login" >
-              <Button color="light">Log in</Button>
-              </Link>
-              </Button.Group>
-            </Navbar.Item>
-          </Navbar.Segment>
-        </Navbar.Menu>
-      </Navbar>
+      </Navbar.Segment>
+
+      <Navbar.Segment align="end">
+        <Navbar.Item dropdown>
+          <Navbar.Link><img
+          src={avatar}
+          alt=""
+          role="presentation"
+          height="28"
+        /></Navbar.Link>
+          <Navbar.Dropdown align="right">
+            <Navbar.Item>Configurações</Navbar.Item>
+            <Navbar.Item>Perfil</Navbar.Item>
+            <Navbar.Divider />
+            <Navbar.Item>Sair</Navbar.Item>
+          </Navbar.Dropdown>
+        </Navbar.Item>
+      </Navbar.Segment>
+    </Navbar.Menu>
+  </Navbar>
 );
 
 export default Tool;
